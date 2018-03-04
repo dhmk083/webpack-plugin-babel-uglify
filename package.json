@@ -1,0 +1,24 @@
+{
+  "name": "webpack-plugin-babel-uglify",
+  "version": "1.0.0",
+  "description": "Transpiles and minifies emitted js files",
+  "main": "index.js",
+  "author": "dhmk083 <dhmk083@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "webpack --config=test/this-plugin.config.js --mode=production && webpack --config=test/babel-modules-false.config.js --mode=production"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.3",
+    "babel-preset-env": "^1.6.1",
+    "uglify-js": "^3.3.12",
+    "webpack": "^4.0.1",
+    "webpack-cli": "^2.0.10"
+  },
+  "peerDependencies": {
+    "babel-core": "^6.26.0",
+    "uglify-js": "^3.3.12",
+    "webpack": "^4.0.1"
+  }
+}
